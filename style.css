@@ -19,15 +19,17 @@ height: 100vh;
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 10vw, 4rem);
-    padding: clamp(0.75rem, 1.5vw, 1rem);
+    padding: clamp(0.8rem, 1.7vw, 1.3rem);
     fill: white;
+    align-items: start;
 }
 
 .header {
     display: flex;
     font-size: 1em;
-    gap: clamp(1.4rem, 3vw, 1.8rem);
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    gap: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    
 }
 
 .header svg {
@@ -40,7 +42,7 @@ height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    font-size: clamp(1rem, 1.6vw, 1.6rem);
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
 }
 
 .duo {
@@ -57,12 +59,14 @@ height: 100vh;
 
 .navbar {
     grid-column: 2 / 3;
-    border: 2px solid blue;
+    background-color: rgb(182, 189, 189);
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
-     grid-row: 2 / 3;
-  grid-column: 2 / 3;
-    border: 2px solid blue;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    
 }
 
