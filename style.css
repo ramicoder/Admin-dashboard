@@ -79,7 +79,7 @@ height: 100vh;
 
 .nav-top-left {
     display: flex;
-    gap: clamp(1rem, 5vw, 2rem);
+    gap: clamp(1rem, 4vw, 1.8rem);
     align-items: center;
 }
 
@@ -147,20 +147,55 @@ button {
     grid-column: 2 / 3;
     background-color: #c9c5c5;
     display: grid;
-    grid-template-columns: repeat(autofit, 1fr);
-    grid-template-rows: repeat(autofit, 1fr);
+    grid-template-columns: 1fr 1fr;
+    
 }
 
+
+.center {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 50px 70px 50px;
+    gap: 30px;
+}
+
+.right {
+    grid-column: 2 / 3;
+}
 .middle-card {
-    border-left: solid 2px yellow;
+    border-left: solid 5px orange;
     padding: 5px;
     display: flex;
     flex-direction: column;
-    border-radius: 3px;
+    border-radius: 9px;
+    background-color: #fff;
+    width: clamp(5rem, 25vw, 40rem);
+    height: clamp(7rem, 20vw, 15rem);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.trio-icon {
+    align-self: end;
+    display: flex;
+    gap: clamp(1.1rem, 1.7vw, 1.3rem);
+}
+
+.trio-icon svg{
+    width: clamp(1.1rem, 2vw, 1.8rem);
+    height: clamp(1.1rem, 2vw, 1.8rem);
 }
 
 .right-card {
     border-radius: 3px;
     display: grid;
     grid-template-rows: repeat(autofit, 1fr);
+    background-color: #fff;
+}
+
+span {
+    font-weight: 600;
+    font-size: clamp(1rem, 2.3vw, 1.3rem);
 }
