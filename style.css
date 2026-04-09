@@ -147,25 +147,19 @@ button {
     grid-column: 2 / 3;
     background-color: #c9c5c5;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 .center {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 70px 50px 70px 50px;
+    margin: 50px 50px 70px 50px;
     gap: 30px;
 }
 
-.right {
-    grid-column: 2 / 3;
-}
 .middle-card {
     border-left: solid 5px orange;
-    padding: 5px;
     display: flex;
     flex-direction: column;
     border-radius: 9px;
@@ -188,14 +182,42 @@ button {
     height: clamp(1.1rem, 2vw, 1.8rem);
 }
 
-.right-card {
-    border-radius: 3px;
-    display: grid;
-    grid-template-rows: repeat(autofit, 1fr);
-    background-color: #fff;
-}
-
 span {
     font-weight: 600;
     font-size: clamp(1rem, 2.3vw, 1.3rem);
+}
+
+.content > span {
+    font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+    margin: 20px 0px 20px 50px;
+}
+.right {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.right-card {
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: clamp(8rem, 25vw, 40rem);
+    width: clamp(12rem, 20vw, 20rem);
+    margin: 50px 50px 70px 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    grid-column: 2/3;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-card span{
+    font-size: clamp(0.8rem, 1.4vw, 1.2rem);
+}
+
+.right-card p {
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
 }
