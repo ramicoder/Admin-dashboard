@@ -4,6 +4,11 @@ body {
     font-family: 'Sentient', serif;
     margin: 0;
 }
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
 
 svg {
     width: clamp(1.3rem, 2vw, 1.8rem);
@@ -45,8 +50,7 @@ height: 100vh;
 .tabs, .settings {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
 }
 
 .duo {
@@ -56,8 +60,8 @@ height: 100vh;
 }
 
 .duo svg {
-    width: clamp(1.1rem, 2vw, 1.8rem);
-    height: clamp(1.1rem, 2vw, 1.8rem);
+    width: clamp(1.1rem, 1.7vw, 1.4rem);
+    height: clamp(1.1rem, 1.7vw, 1.4rem);
     flex-shrink: 1;
 }
 
@@ -155,7 +159,8 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 50px 50px 70px 50px;
-    gap: 30px;
+    align-content: start;
+    gap: 20px;
 }
 
 .middle-card {
@@ -165,7 +170,7 @@ button {
     border-radius: 9px;
     background-color: #fff;
     width: clamp(5rem, 25vw, 40rem);
-    height: clamp(7rem, 20vw, 15rem);
+    height: clamp(3rem, 20vh, 30rem);
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -210,14 +215,13 @@ span {
     overflow: auto;
     grid-column: 2/3;
     margin-top: 120px;
-    justify-content: center;
     align-items: center;
 }
 
 .right-card span{
-    font-size: clamp(0.8rem, 1.4vw, 1.2rem);
+    font-size: clamp(0.2rem, 1.4vw, 1.2rem);
 }
 
 .right-card p {
-    font-size: clamp(0.7rem, 1vw, 0.8rem);
+    font-size: clamp(0.1rem, 1vw, 0.8rem);
 }
