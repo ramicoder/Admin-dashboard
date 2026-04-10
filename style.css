@@ -70,7 +70,7 @@ height: 100vh;
     background-color: rgb(138, 142, 142);
     display: flex;
     flex-direction: column;
-    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 1);
     padding: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -149,16 +149,18 @@ button {
 .content {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    background-color: #c9c5c5;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr; 
+    padding: 30px; 
+    gap: 30px;
+    align-items: start;
 }
 
 .center {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 50px 70px 50px;
+    
     align-content: start;
     gap: 20px;
 }
@@ -174,6 +176,8 @@ button {
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
+    background-color: #fcf4f4e6;
+    box-shadow: 15px 15px 10px -10px rgba(0, 0, 0, 1);
 }
 
 .trio-icon {
@@ -194,8 +198,10 @@ span {
 
 
 .right {
-    grid-column: 2 / 3;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0;
 }
 
 .right-card {
@@ -203,13 +209,16 @@ span {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: clamp(15rem, 28vh, 30rem);
-    width: clamp(12rem, 18vw, 20rem);
+    height: clamp(5em, 28vh, 30rem);
+    width: clamp(3rem, 18vw, 20rem);
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
     grid-column: 2/3;
     align-items: center;
+    background-color: #fcf4f4e6;
+    box-shadow: 15px 15px 10px -10px rgba(0, 0, 0, 1);
+    align-self: flex-start;
 }
 
 .right-card span{
@@ -222,18 +231,25 @@ span {
 
 .span-duo {
     font-size: clamp(1.3rem, 2.6vw, 1.6rem);
-    margin: 20px 0px 20px 50px;
+    margin: 20px 0 0 0; 
+    display: block;
 }
 
+.span-duo-right{
+    font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+    margin: 20px 0 0 0; 
+    display: block;
+}
 .right-card-duo {
     display: flex;
-    gap: clamp(1.3rem, 2.3vw, 1.5rem);
-    justify-content: space-between;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-card-duo img{
-    width: clamp(1.8rem, 4vw, 3rem);
-    height: clamp(1.8rem, 4vw, 3rem);
+    width: clamp(1.8rem, 3vw, 2.5rem);
+    height: clamp(1.8rem, 3vw, 2.5rem);
     border-radius: 30px;
     align-items: start;
 }
